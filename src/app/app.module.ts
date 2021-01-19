@@ -7,10 +7,11 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { ProductListComponent } from "./products/product-list.component";
 import { convertToSpacesPipe } from "./shared/convert-to-spaces.pipe";
 import { StarComponent } from "./shared/star.component";
+import { HttpClientModule } from "@angular/common/http";
 //import { AngularFontAwesomeModule } from "angular-font-awesome";
 
 @NgModule({
-  imports: [BrowserModule, NgbModule, FormsModule],
+  imports: [ BrowserModule, NgbModule, FormsModule, HttpClientModule],
   declarations: [
     AppComponent,
     ProductListComponent,
